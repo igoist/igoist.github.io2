@@ -6,12 +6,15 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "rules": {
         "indent": [
             "error",
-            4,
+            2,
             { "SwitchCase": 1 }
         ],
         "linebreak-style": [
@@ -32,6 +35,12 @@
         "semi": [
             "error",
             "always"
-        ]
-    }
+        ],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-indent": [2, 2]
+    },
+    "plugins": [
+        "react"
+    ]
 }
