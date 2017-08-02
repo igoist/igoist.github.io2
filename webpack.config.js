@@ -27,8 +27,11 @@ module.exports = {
         include: path.join(__dirname, srcPath)
       }, {
         test: /\.scss$/,
-        exclude: /node_modules/,
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        include: path.join(__dirname, srcPath)
+      }, {
+        test: /\.(png|jpg)$/,
+        loaders: ['url-loader'],
         include: path.join(__dirname, srcPath)
       }
     ]
