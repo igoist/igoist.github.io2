@@ -14,6 +14,12 @@ class Header extends React.Component {
         <nav>
           <h1>adsad</h1>
         </nav>
+        <div id='vertical'>
+          <div >
+            <h1>花瓣大前端团队博客</h1>
+            <h2>技术宅改变世界！跬步千里，记录思考、总结。</h2>
+          </div>
+        </div>
       </header>
     )
   }

@@ -1,4 +1,26 @@
 #footer {
-	height: 300px;
-	background: #333;
+    height: 120px;
+    line-height: 120px;
+    background: #333;
+    ul {
+        margin-left: 4vw;
+        li {
+            float: left;
+            list-style: none;
+            padding-left: 22px;
+            a {
+                color: #fff;
+                text-decoration: none;
+                transition: color .2s ease-in-out;
+                &:hover {
+                    color: #87cceb;
+                }
+            }
+        }
+    }
+    span {
+        margin-right: 4vw;
+        float: right;
+        color: #fff;
+    }
 }
