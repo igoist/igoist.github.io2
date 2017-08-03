@@ -5,10 +5,15 @@ $bgColor: #333;
 	padding: 0;
 }
 
+body {
+    font-size: 10px;
+    font-family: PingFang SC,Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+    background: #f4f8fb;
+}
+
 #root {
-	width: 200px;
-	height: 200px;
-	background: $bgColor;
-	color: #fff;
+	// background: $bgColor;
+	// color: #fff;
+	// background-image: url(../img/banner/001.jpg);
 }
 

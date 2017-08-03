@@ -1,33 +1,24 @@
-# et-js-boilerplate JS 样板 or 脚手架
+# igoist.github.io2
 
-My proj initial proto with gulp、Webpack to bundle ES6, etc & use scripts to do build tasks
+个人 Blog 项目
 
 ## 部署 Deploy
 
 ```sh
-yarn（推荐）
-
-# or
 npm i
-
-# then important! 因为必须执行 prebuild 脚本
-npm run build
-
-# final
-该干嘛干嘛，看看 js、css 生效否
 ```
 
 <br />
 
-## 开发 Development
-```sh
-# 临时 js、scss 分开编译
+## 几部分依赖 Dependencies
+* babel -- babel-core、babel-loader、babel-preset-env、babel-preset-react
+* eslint -- eslint、eslint-loader、eslint-plugin-react
+* react 模块热加载 -- express、react-hot-loader、webpack-dev-middleware、webpack-hot-middleware
+* scss 加载 sass-loader、node-sass、css-loader、style-loader
+* img 加载 url-loader
+* webpack 相关 -- webpack
 
-# js 部分，运行下面命令，通过 webpack 监听 js 改动，进行增量编译（webpack --watch 也是在内存中还是直接被编译到 dist？）
-# 之后会做相应变动，使得运行一个命令，自动监听 js 与 scss
-# 另外，新增页面的 js 入口文件需要更新到 webpack.config.js 的 entry 当中
-npm run dev
-```
+<br />
 
 ## 文件结构 file structure
 ```
@@ -45,14 +36,15 @@ root
 │   ├── img
 │   ├── js
 │   ├── sass
-│   └── views (html or tpl)
+│   ├── index.html
+│   ├── App.js
+│   └── index.js
 ├── .babelrc
 ├── .editorconfig
 ├── .gitignore
 ├── .nvmrc
-├── gulpfile.js
 ├── package.json
 ├── README.md
-├── webpack.config.js (you can make a new webpack dir & custom by yourself)
-└── yarn.lock
+├── server.js
+└── webpack.config.js (you can make a new webpack dir & custom by yourself)
 ```
