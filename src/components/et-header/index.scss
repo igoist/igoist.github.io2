@@ -11,20 +11,22 @@ $headerHeight: 400px;
     }
 }
 
-$fadeInTime: 0.32s;
+$fadeInTime: .6s;
 #vertical {
     margin-top: 62px;
     text-align: center;
     h1, h2 {
         opacity: 0;
-        transform: translateY(32px);
+        transform: translateY(-12px);
     }
     h1 {
         margin: 10px 0 10px 0;
-        color: #000;
+        // color: #000;
+        color: #fff;
         font-size: 50px;
-        text-shadow: 0 1px 6px rgba(0,0,0,0.5);
-        animation: vFadeIn $fadeInTime ease-in-out 0s 1 forwards;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.5);
+        // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #000, 0 0 70px #000;
+        animation: vFadeIn $fadeInTime ease-in-out .2s 1 forwards;
         @media (max-width: 711px) {
             font-size: 36px;
         }
@@ -33,7 +35,7 @@ $fadeInTime: 0.32s;
         font-size: 27px;
         font-weight: 400;
         text-shadow: 0 1px 3px rgba(0,0,0,0.35);
-        animation: vFadeIn $fadeInTime ease-in-out .12s 1 forwards;
+        animation: vFadeIn $fadeInTime ease-in-out .1s 1 forwards;
         @media (max-width: 711px) {
             font-size: 18px;
         }
@@ -43,7 +45,7 @@ $fadeInTime: 0.32s;
 @keyframes vFadeIn {
     0% {
         opacity: 0;
-        transform: translateY(32px);
+        transform: translateY(-12px);
     }
     100% {
         opacity: 1;
