@@ -16,7 +16,7 @@ class Footer extends React.Component {
         <div>
           <ul>
             <li>
-              <a href='https://github.com/igoist'>FAQ</a>
+              <a href='/faq/'>FAQ</a>
             </li>
             <li>
               <a href='https://github.com/igoist'>Github</a>

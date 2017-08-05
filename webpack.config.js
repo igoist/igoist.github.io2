@@ -3,14 +3,20 @@ const webpack = require('webpack');
 
 const srcPath = './src/';
 
+const entries = {
+  home: [
+    'webpack-hot-middleware/client',
+    srcPath + 'index.js'
+  ],
+  faq: [
+    'webpack-hot-middleware/client',
+    srcPath + 'views/faq/index.js'
+  ]
+}
+
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
-  entry: {
-    home: [
-        'webpack-hot-middleware/client',
-        srcPath + 'index.js'
-    ]
-  },
+  entry: entries,
 
   output: {
     filename: '[name].bundle.min.js',
